@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>add new element</title>
+
+  <style type="text/css">
+  #div{width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+
+  </style>
+  <script>
+function allowDrop(ev)
+{
+  ev.preventDefault();
+}
+function drag(ev)
+{
+  ev.dataTransfer.setData("Text",ev.target.id);
+}
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+  </script>
+</head>
+<body><!--
+
+      myBaby{
+    font: MS Gothic;
+    display:block;
+    background-color:#ccc;
+    padding:5px;
+    font-size:3px;
+    }
+<h1>my first script</h1>
+<p>my second graph</p>
+<myBaby>my sweet heart</myBaby>
+-->
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer"></option>
+  <option value="Firefox"></option>
+  <option value="Chrome"></option>
+  <option value="Chrome"></option>
+
+</datalist>
+
+
+
+
+<!--
+<form action="demo-form.php" method="get">
+color:<input type="color" name="lala" ><br>
+date:<input type="date" name="ququ"><br>
+datetime:<input type="datetime-local" name="qrqr"><br>
+email:<input type="email" name="uu"><br>
+month:<input type="month" name="pp"><br>
+number:<input type="number" name="quantity" min="1" max="80"><br>
+point:<input type="range" name="oo"  min="1" max="100"><br>
+search:<input type="search" name="ii"><br>
+tel:   <input type="tel" name="gg"><br>
+time:  <input type="time" name="yy"><br>
+URL:   <input type="url" name="gg"><br>
+week:  <input type="week" name="week_year"><br>
+ <input type="submit"><br>
+</form>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msup><mi>a</mi><mn>2</mn></msup>
+    <mo>+</mo>
+    <msup><mi>b</mi><mo>2</mo></msup>
+    <mo>=</mo>
+     <msup><mi>c</mi><mo>2</mo></msup>
+
+  </mrow>
+  </math>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="180">
+
+  <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:blue;stroke-width:3 fill-rule:odd;"></polygon>
+</svg>
+
+<circle cx="100" cy="50" r="40" stroke="yellow" stroke-width="10"  fill="green" ></circle>
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #3c3c3c;"></canvas>
+<p>
+ <img src="img_the_scream.jpg" alt="文章" width="100" height="200">
+</p>
+var m=document.getElementById("myCanvas")
+var n=m.getContext("2d");
+var img=document.getElementById("scream")
+image.onload=function(){
+n.drawImage(img,10,10);
+}
+n.font="20px 隶书";
+n.strokeText("我是一片云",100,150);
+
+n.beginPath();
+n.arc(150,150,60,0,2*Math.PI);
+n.stroke();
+n.fillStyle="#880000";
+n.fillRect(0,0,150,75);
+n.moveTo(0,0);
+n.lineTo(200,100)
+n.stroke();
+var grd=n.createLinearGradient(0,0,300,0);
+grd.addColorStop(0,"black");
+grd.addColorStop(1,"yellow");
+n.fillStyle=grd;
+n.fillRect(0,0,100,35);
+-->
+
+
+
+
+</body>
+</html>
